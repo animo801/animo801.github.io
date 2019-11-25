@@ -56,8 +56,8 @@ body {
 
 
 
-.section1 img {
-    width: 100px
+.section1Image {
+    width: 60%;
 }
 
 
@@ -74,7 +74,7 @@ body {
 }
 
 
-.section2 img {
+.section2Image {
     width: 40%
 }
 
@@ -204,7 +204,7 @@ a:hover {
     .footerThings {
         margin-left: 10%;
     }
-    .section2 img {
+    .section2Image {
         width: 200px
     }
     
