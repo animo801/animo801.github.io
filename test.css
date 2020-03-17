@@ -7,7 +7,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 body {
     display: grid;
-    grid-template-columns: 5% auto 5%;
+    grid-template-columns: 10% auto 10%;
     grid-template-rows: 56px;
     background-color: #ffffff;
     margin: 0; 
@@ -35,7 +35,8 @@ body {
 .headingForProjects {
     width: 100%; 
     grid-column: 2 / span 1;
-    margin-top: 80px
+    margin-top: 80px; 
+    margin-bottom: 8px
 }
 
 .section1 {
@@ -49,6 +50,7 @@ body {
 
 .section1:hover {
     opacity: .7;
+    cursor: pointer
 }
 
 .lastSection {
@@ -101,7 +103,7 @@ body {
     margin: 0 0 8px 0 ; 
     padding: 0;
     line-height: 1.2;
-    width: 70%; 
+    width: 100%; 
     font-weight: 100;
 
 }
@@ -109,10 +111,19 @@ body {
 .mainH2 {
   font-size: 18px; 
   font-weight: 300; 
-  padding: 0 0 16px 0; 
+  padding: 0; 
   margin: 0; 
   line-height: 1.4;
   width: 100%;
+}
+
+p {
+    font-size: 18px
+}
+
+.headerSmall {
+    font-size: 21px; 
+    font-weight: 500; 
 }
 
 .whiteText {
@@ -161,6 +172,7 @@ body {
 
 a {
     color: #52d98a;
+    text-align: center;
 }
 
 a:hover {
@@ -175,10 +187,9 @@ a:hover {
 }
 
 .footerThings {
-    margin-left: 5%;
-    padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .phoneIcon {
@@ -199,12 +210,11 @@ a:hover {
 
 @media only screen and (min-width: 600px) {
     body {
-        grid-template-columns: 10% auto 10%;
+        grid-template-columns: 20% auto 20%;
 
     }
     
     .footerThings {
-        margin-left: 10%;
     }
     .section2Image {
         width: 200px
@@ -224,4 +234,85 @@ a:hover {
     .emailIcon {
         margin-top: 16px;
     }
+}
+
+
+
+
+
+/*Case Study CSS */
+.mainContent {
+    width: 100%; 
+    grid-column: 2 / span 1;
+    margin-top: 24px
+}
+
+.mainContent li {
+    line-height: 1.5; 
+    margin-bottom: 8px; 
+    font-size: 18px
+}
+
+
+.flexSection {
+    display: flex;
+}
+
+
+
+.imageOnThingButNeverGoAway {
+    float: left; 
+    margin-right: 24px;
+    margin-bottom: 16px;
+    padding: 0 auto;
+}
+
+.imageOnThing {
+    float: left; 
+    margin-right: 24px;
+    margin-bottom: 16px;
+    padding: 0 auto;
+}
+
+.imageSizeSmall {
+    width: 400px; 
+    margin-bottom: 4px;
+}
+
+.imageSizeXS {
+    width: 200px
+}
+
+.imageSizeMedium {
+    width: 100%; 
+}
+
+@media only screen and (max-width: 600px) {
+    .imageOnThing {
+        float: none; 
+        margin-right: 0; 
+        text-align: center;
+    }
+    
+    .imageSizeSmall {
+        width: 300px; 
+        margin-bottom: 4px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .imageSizeXS {
+        width: 150px;
+    }
+}
+
+.fullWidth {
+    width: 80%;
+    display: flex; 
+    justify-content: center;
+    margin: 24px auto;
+}
+
+.fullHeight {
+    margin-bottom: 24px
 }
