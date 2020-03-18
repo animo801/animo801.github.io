@@ -1,0 +1,163 @@
+<html> 
+    <head> 
+        <title>Rainfocus | Rob Metcalf Design</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="test.css">
+
+        <link rel='icon' href='favicon.png' type='image/x-icon'/ >
+    
+    </head>
+    
+    <body>
+        <nav class="mainHeader">
+            <a href="index.html" class="">
+                <h1 class="logo">Rob Metcalf</h1>
+            </a>
+        </nav>
+
+            <div class="headingForProjects"> 
+                <h1 class="mainH1">Rainfocus</h1>
+            </div>
+            <div class="section1">
+                
+                <img src="rainfocusComputer.png" class="section1Image">
+            </div>
+        
+            <div class="mainContent">
+                <h1 class="mainH1">The short version</h1>
+                <ul>
+                    <li>I started at Rainfocus April 2018. My role was user research, UI design, prototyping, and strategy.</li>
+                    <li>The main tool of Rainfocus, Workflow Builder, required hundreds of hours of training to become procient at.</li>
+                    <li>Our biggest problem was figuring out everything we needed to fix.</li>
+                    <li>We conducted hundreds of user interviews and multiple prototypes to create a tool that was easy to use.</li>
+                    <li>After our tools release, external clients were able to use Workflow Builder on their own saving the company thounsands.</li>
+                </ul>
+                
+            </div>
+        
+            <div class="mainContent">
+                <h1 class="mainH1">The long version</h1>
+                <p>In August of 2018, I started on a new Scrum team at Rainfocus. I was coming from a team that was less UX heavy and told that I would have a new project to work on called Workflow Builder. I realized very early on that the only way I was going to have success in this project was to work with my team. So I dove in with my PM Jack to figure out the best way to tackle this beast. We decided to approach this iteratively in what we called phases. Each phase would be a chunk of code our devs could work on that would provide real impact to our end user.
+                    <br>
+                    <br>
+                </p>
+                
+                <span class="headerSmall">To learn fast, talk to everyone</span>
+                <p>Do you know what the image below you is? Do you know which things you can click on or interact with? Do you know what it represents? We could not answer these questions as first time users. However, we quickly realized there were bigger problems.</p>
+                
+                <div class="fullWidth">
+                    <img src="rainfocusWFBOld.png" class='imageSizeMedium'>
+                </div>
+                
+                <p>
+                    Users had to know JSON, a programming language, to be able to use Workflow Builder. Not just to do advanced features but to do their job. Everything had to be configured with JSON. This presented three huge problems for the business.
+                    <br>
+                    <br>
+                    First, it takes a long time to teach someone to use JSON. Most internal users didn’t feel comfortable until around six months of use.
+                    <br>
+                    <br>
+                    Second, no external users were using Workflow Builder. This meant up to a full week of work for our services team that they could have been spent elsewhere.
+                    <br>
+                    <br>
+                    Third, available tools were not clearly visible so things were being recreated and hacked all of the time.
+                    <br>
+                    <br>
+                    To address these issues, I went straight for my team. Jack and I spent hours and hours sifting through the JSON to find every possible configuration. We set up dozens of interviews with our services team to find out how they are using the tool. Devs ran queries. Other designers generously chipped in to help. We literally talked with everyone.
+                    <br>
+                    <br>
+                </p>
+                
+                <span class="headerSmall">Step Editor: Give them a place to work</span>
+                
+                <div class="fullWidth">
+                    <img src="rainfocusStepEditor.png" class='imageSizeMedium'>
+                </div>
+
+                <p>
+                    What we found was very interesting. Each card in Worflow Builder represents something that an end user does while registering for an event. Our users needed a place where they could edit basic information in drop-downs and text fields, add relevant content to the page and connect steps to one another. So we created Step Editor, which was named by Jack. Step Editor is a panel that slides onto a screen to enable users to edit steps just like they would in the JSON.
+                    <br>
+                    <br>
+                    Once we had a design for a template, we had to go back and redesign 31 steps so that they too would work in this new UI.
+                    <br>
+                    <br>
+                </p>  
+                
+                <span class="headerSmall">Spaghetti is a food, not a feature</span>
+                <p>
+                    Let’s go back to this first picture, shown again below. Do you know what this is communicating? What do the lines mean? What are they telling you now?
+                </p>
+                
+                <div class="fullWidth">
+                    <img src="rainfocusWFBOld.png" class='imageSizeMedium'>
+                </div>
+                
+                <p>
+                    To be honest, after asking over 15 people those same questions, I never got a good answer. No one knew what the lines meant. Lines are intended to show the flow users will take to accomplish a task. However, the lines go on top of each other and turn into what one user called “spaghetti”.
+                    <br>
+                    <br>
+                    Our goal was to fix how Workflow Builder looked. In addition to the spaghetti lines, we found that users hated:
+                </p>
+                <ul>
+                    <li>Actions. I do not have time to write about actions right now because that is going to be its whole own project.</li>
+                    <li>The icons for steps. They made no sense. (Can you see the dollar signs in the image?)</li>
+                </ul>
+                <br>
+                
+                <span class="headerSmall">Users need to show and not tell</span>
+                <p>
+                    To fix these problems, I once again went to my team. We had workshops with designers and devs, interviewed more people, and talked a lot. What we found was very cool. In Workflow Builder there are certain types of lines that were ruining the experience. <b>Lines that show what attendees generally do are helpful. However, there are also lines representing actions that one out of 10,000 people take.</b> Those are shown with equal importance on the page. Our users couldn’t tell us this but we observed it while watching them work. They would make lines, or connections, do different steps and those lines would make their lives miserable.
+                    <br>
+                    <br>
+                    What we decided to do was hide lines that are not 100% necessary to users. We did this by placing the steps in a vertical grid. Much like Trello, you can add steps below but not above the top step. Your steps can stretch on for miles if you want them to. But, we will only show you lines that go from one column to the next. If you hover over a step, you can see all of the connections that go out of it.
+                </p>
+                
+                <div class="fullWidth">
+                    <img src="rainfocusFinalWFB.png" class='imageSizeMedium'>
+                </div>
+                
+                <p>
+                When we tested this with users, people were nervous. They thought they wanted to see all the lines at once. However, based on what we realized lines did, we took a gamble. We decided that if we made a button to toggle on lines, it would be the last thing we made. We truly believe that is not necessary and that users will find that our design solves that problem well.
+                    <br>
+                    <br>
+                </p>
+                
+                <span class="headerSmall">What I learned</span>
+                <p>More than anything these projects have taught me the importance of a team. The team at Rainfocus is the reason these designs look and function great! It blows my mind that my dev team is able to create this. I feel honored to have played a role in this team and to make something that I am confident will make hundreds of people’s jobs easier.</p>
+                
+                <br>
+                <br>
+                
+            
+        </div>
+        </body>
+
+        <footer class="footer"> 
+            <div class="footerThings"> 
+                
+                    <a href="tel:1-801-231-4216" class="phoneIcon">
+                        <img src="smartphone-24px.svg" alt="phone link">
+                        <h2>801-231-4216</h2>
+                    </a>
+                
+                <a href="mailto:animo801@gmail.com" class="emailIcon">
+                    <img src="email-24px.svg" alt="email link">
+                    <h2>animo801@gmail.com</h2>
+                </a>
+            
+            </div>
+            
+        
+        </footer>
+        
+   
+
+
+        
+
+</html>
